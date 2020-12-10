@@ -1,0 +1,43 @@
+
+.main-body{
+  background-image: url('../../assets/images/blurbackground.jpg');
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+mat-card{
+  min-width: 300px;
+  background: #ffffffa3;
+  top: 50px;
+  margin-bottom:20px ;
+  border-radius: 0.4rem;
+  .responsive{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+mat-card-subtitle{
+  font-size: medium;
+  color:#014bab;
+}
+.flex-wrap-sec{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  margin: 50px 0;
+  
+}
+.flex-wrap{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  
+}

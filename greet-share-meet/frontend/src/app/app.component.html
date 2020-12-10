@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <div class="bg" *ngIf="isLoggedIn$ | async as isLoggedIn">
+      <app-navbar></app-navbar>
+    </div>
+      <router-outlet></router-outlet>
+  </body>
+</html>
+
+

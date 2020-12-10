@@ -1,0 +1,33 @@
+<html>
+    <body>
+          <div class= "imgsty"><img src="../../assets/images/meetandgreetlogo.jpg" class="responsive"></div>
+          <div class="body">
+
+            <div id = "myTab" class="menu-bar">
+              <li  routerLink="homepage">Home</li>
+              <li  routerLink="authentication/announcement">Make Announcement</li>
+              <li  routerLink="announcements">Timeline</li>
+
+              <div class = "dropdown">
+                <li>Make a Match</li>
+                <div class="dropdown-content">
+                  <li routerLink="matchmaking/registertimeslots">Register Slot</li>
+                  <li routerLink="matchmaking/viewtimeslots">View Slot</li>
+                </div>
+              </div>
+               <div class = "dropdown">
+                <li> <mat-icon style="padding: 0px 16px;">menu</mat-icon></li>
+                <div class="dropdown-content">
+                  <li routerLink="home/editprofile">Edit Profile</li>
+                  <li routerLink="home/addeditinterests">Edit interest</li>
+                  <li routerLink="authentication/login" (click)="logout()">Logout</li>
+                </div>
+              </div>
+            </div>
+            
+          </div>  
+
+    </body>
+
+</html>
+

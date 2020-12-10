@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+        <div class="body">
+         
+          <mat-card class="user-card" *ngIf="usercards==0">
+            <p>No matching slots found</p>
+       </mat-card>
+
+              <mat-card class = "textcard" *ngFor="let usercard of usercards">
+    
+                <mat-card class="user-card" *ngIf="usercards.length==0">
+                  <p>No matching slots found</p>
+             </mat-card>
+
+                <mat-card-title>
+                  <h4> Name: {{usercard.name}}</h4>
+                </mat-card-title>
+          
+                <mat-card-text>
+                  <h4>Contact: {{usercard.contact}}</h4>
+                </mat-card-text>
+               
+          
+                <mat-card-text>
+                  <h4>Email: {{usercard.email}}</h4>
+                </mat-card-text>
+          
+                <mat-card-text>
+                 <h4>Interest: {{usercard.interest}}</h4>
+                </mat-card-text>
+          
+                <mat-card-text>
+                  <h4>Start date & time: {{usercard.startDateTime}}</h4>
+                </mat-card-text>
+          
+                <mat-card-text>
+                  <h4>End date & time: {{usercard.endDateTime}}</h4>
+                </mat-card-text>
+          
+                <button mat-raised-button color="primary" style="margin-left: 85%; margin-right: 10%;">Connect</button>
+            </mat-card>
+
+        </div>
+</html>
+
+
+
+
+  
+
+
+
+
+
+

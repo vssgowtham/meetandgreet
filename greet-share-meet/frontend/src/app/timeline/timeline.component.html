@@ -1,0 +1,14 @@
+
+<div class="main-body">
+    <div class="flex-wrap-sec">
+       <mat-card class="announcement-card" *ngIf=" announcements && announcements.length==0">
+            <p>No announcements found related to you interests</p>
+       </mat-card>
+       <mat-card class="announcement-card" *ngFor="let announcement of announcements">
+        <div class="flex-wrap">
+          <mat-card-subtitle><b>Interest</b> : {{announcement.interest}}</mat-card-subtitle>
+          <mat-card-content>{{announcement.announcement}}</mat-card-content> 
+        </div>
+       </mat-card>
+   </div>
+</div>

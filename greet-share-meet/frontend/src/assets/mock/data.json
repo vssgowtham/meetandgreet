@@ -1,0 +1,14 @@
+{
+    "gowtham": {
+        "username": "gowtham",
+        "password": "gowtham",
+        "age": "",
+        "isActive": false
+    },
+    "sruthi": {
+        "username": "sruthi",
+        "password": "sruthi",
+        "age": "",
+        "isActive": true
+    }
+}
